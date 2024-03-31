@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoGalleryApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="navb" >
+        <ul>
+            <li ><img class="Logo"src="Gimages/gimg3.webp"></li>
+            <li><a>Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Mygallery">MyGallery</a></li>
+            <li><a href="#header">General</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+            
+        </ul>
+    </div>
+    <!--------------Home-------------------------->
+    <div id="home">
+        <img src="images/home.jpg">
+        <div class="home-content">
+            <div class="contents">
+                <h1>Effortless Image Upload</h1>
+                <p>Seamlessly upload your images in a variety of formats, ensuring your precious moments and designs are safely stored</p>
+            </div>
+            <div class="contents">
+                <h1>Smart Image Search</h1>
+                <p>Harness the power of our API to find the perfect image with advanced search capabilities, powered by AI</p>
+            </div>
+            <div class="contents">
+                <h1>Adaptable to Your Needs</h1>
+                <p>Whether you're an individual, a photographer, or a business, our platform adapts to your unique requirements, thanks to the versatility of the Unsplash API.</p>
+            </div>
+        </div>
+    </div>
+    <!-----------------About------------------->
+    <div id="about">
+        <h1>ABOUT OUR PLATFORM</h1>
+        <div class="para"><p>Welcome to GK photo Gallery, your premier destination for image uploading and intelligent image searching. We empower users to effortlessly manage and discover visual content with cutting-edge technology.</p>
+        <p>What We Offer:<br>
+            <span>1. Image Uploading:<br></span>
+            Easy Upload Process: Seamlessly upload your images in various formats with a user-friendly interface.<br>
+            Secure Storage: We prioritize the security of your data, ensuring your images are stored safely and privately.<br>
+            Customizable Tags: Add relevant tags and descriptions to your images for better organization and searchability.<br>
+            <span>2. Image Searching via API:</span><br>
+            Advanced Search Capabilities: Utilize our powerful API to search for images based on keywords, tags, or visual similarity.<br>
+            Intelligent Algorithms: Our AI-driven algorithms ensure accurate and relevant search results, saving you time and effort.<br>
+            Integration-Friendly: Easily integrate our API into your applications, websites, or services for enhanced image search functionality.</p>
+            <p><span>Why Choose GK photo Gallery?</span><br>
+            <span> User-Centric Design:</span> <br>We prioritize user experience, offering a sleek and intuitive platform for both uploading and searching images.<br>
+            <span> Scalability:</span><br> Whether you're an individual, a small business, or a large enterprise, our platform scales to meet your needs.<br>
+            <span>Innovative Technology:</span><br> We stay ahead of the curve by leveraging the latest advancements in AI and machine learning to enhance image management and discovery.<br><br>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Get Started Today! by clicking <a style="color:blue" href="login.html" target="_blank">here</a></span></p>     
+        </div>
+    </div>
+    <!----------------------My Gallery------------------------------->
+      <div id="Mygallery">
+        <h1>MY GALLERY</h1>
+        <div class="Gallery-items">
+            <div class="Gallery-item">
+                <img src="Gimages/gimg7.webp ">
+            </div>
+        </div>
+      </div>
+<!--------------image upload-------------------------->
+<div id="upload-section">
+    <div class="container">
+        <input type="file" id="file" accept="image/*" hidden>
+        <div class="img-area" data-img="">
+            <h3>Upload Image</h3>
+            <p>Image size must be less than 2MB</p>
+        </div>
+        <button class="select-image">Select Image</button>
+    </div>
+</div>
+    <!--------------General------------------------->
+    <div id="header">
+        <h1>GENERAL IMAGES</h1>
+        <form action="" id="form">
+            <input type="text" id="search-input" placeholder="search for images">
+            <button id="buttonsearch">Search</button>
+        </form>
+    </div>
+    <div class="search-results">
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1710942499889-71f233dae342?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" alt="House">
+            <a href="https://unsplash.com/photos/a-living-room-with-a-couch-a-table-and-a-tv-j8mWglm6ZQ0" target="_blank">House</a>
+            
+        </div>
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1682687982183-c2937a74257c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D" alt="Man walking">
+            <a href="https://unsplash.com/photos/a-person-standing-on-top-of-a-sandy-hill-2gVgVf5CN" target="_blank">Man walking</a>
+        </div>
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1711117479774-5102ba0eee19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8fA%3D%3D" alt="Ship">
+            <a href="https://unsplash.com/photos/a-boat-sitting-on-top-of-a-sandy-beach-under-a-green-sky-RF9Xstn6akM" target="_blank">Ship</a>
+        </div>
+    </div>
+    <button id="showmore">Show more</button>
+</body>
+</html>

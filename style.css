@@ -1,0 +1,293 @@
+body{
+    padding:0;
+    margin:0;
+    background:linear-gradient(420deg,rgba(227, 144, 241, 0.836),white,rgba(248, 111, 196, 0.841));
+    background-size:auto;
+    box-sizing: border-box;
+    height: 300vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html::-webkit-scrollbar
+{
+    display: none;
+}
+
+.navb ul{
+    background: rgba(0, 0, 0, 0.9  );
+    display: flex;
+    height: 3.5rem;
+    color: #fff;
+    margin: 0;
+    justify-content: end;
+    align-items: center;
+}
+.navb ul li{
+    font-size: 18px;
+    list-style:none;
+    padding:40px;
+}
+.navb ul li:hover{
+    color: darkgoldenrod;
+    text-decoration:underline;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul li img{
+    width: 60px;
+    height: 48px;
+    margin-right: 720px;
+}
+
+/*-------------Home--------------------*/
+#home{
+    position: relative;
+}
+#home img{
+    height: 600px;
+    width: 1540px;
+    position: absolute;
+    z-index: 0;
+}
+#home img:hover{
+    opacity:0.9;
+}
+ .home-content{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.contents
+{
+    color:#fff;
+    padding:10px;
+    width:30%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-top:300px;
+}
+.contents:hover{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/*----------------About-----------------*/
+#about{
+    height:fit-content;
+    width:1000px;
+    margin:20px;
+    border-radius: 10px;
+    padding:10px;
+}
+#about h1{
+    margin-top: 100px;
+    color:midnightblue;
+}
+.para p{
+      font-size:16px;
+      font-weight:450;
+      line-height:30px;
+}
+span{
+    color:black;
+    font-size:18px;
+    font-weight:550;
+}
+
+/*--------General---------------*/
+#header h1{
+    padding-top:150px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 30px 0;
+    color:midnightblue;
+}
+#header input{
+    width: 300px;
+    height: 25px;
+    background:transparent;
+    border-radius: 10px;
+    border-width:2px;
+    border-color:black;
+    margin-bottom: 60px;
+    margin-left:37%;
+}
+#buttonsearch{
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    background-color:transparent;
+    font-weight:bolder;
+    outline: #1388e2;
+    color:rgb(241, 6, 73);
+    cursor: pointer;
+}
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1300px;
+    overflow: hidden;
+}
+.search-result{
+    margin-bottom: 60px;
+    width:30%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px;
+
+}
+.search-result img{
+    width:100%;
+    height:400px;
+    transition: opacity 0.2s ease-in-out;
+    object-fit:cover;
+}   
+.search-result img:hover{
+    opacity: 0.8;
+}
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#showmore{
+    background:transparent;
+    color: forestgreen;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin:30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    
+}
+/*---------------------My gallery-----------------------------*/
+#Mygallery{
+    padding-left: 100px;
+}
+#Mygallery h1{
+    padding-top: 80px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 30px 0;
+    color: midnightblue;
+}
+
+.Gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.Gallery-item img {
+    width: 300px;
+    height: 300px;
+    transition: opacity 0.2s ease-in-out;
+    object-fit: cover;
+    border-radius: 8px;
+    position: relative;
+}   
+
+.Gallery-item img:hover {
+    opacity: 0.8;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.Gallery-item-wrapper {
+    position: relative;
+}
+
+.Gallery-item {
+    width: 300px;
+    height: 300px;;
+    object-fit: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.Gallery-item-wrapper:hover .delete-btn {
+    display: block;
+}
+/*----responsiveness---*/
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (max-width:768px) {
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    } 
+}
+@media screen and (max-width:480px) {
+    .search-result{
+        width:100%;
+    } 
+}
+/* Styles for image upload area */
+.img-area {
+    margin-top: 50px;
+    margin-left: 600px;
+    width: 300px;
+    height:auto;
+    border: 2px dashed #ccc;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.img-area h3 {
+    margin: 10px 0;
+    color: #111cf4;
+}
+
+.img-area p {
+    color:#fff;
+}
+.container button
+{
+    color:#fff;
+    margin-left: 600px;
+    position: relative;
+    background: #1388e2;
+    padding:5px;
+    font-size: 15px;
+    border-radius:8px;
+    border: none;
+}
